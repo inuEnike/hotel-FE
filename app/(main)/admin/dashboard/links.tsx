@@ -39,6 +39,7 @@ export const links = [
     icon: <AiOutlineGroup className="text-lg" />,
     iconCurrent: <MdRoom className="text-lg" />,
   },
+
   {
     name: "Hotels",
     link: "/admin/dashboard/hotels",
@@ -63,4 +64,7 @@ export const links = [
     icon: <AiOutlineMenuUnfold className="text-lg" />,
     iconCurrent: <AiFillMeh className="text-lg" />,
   },
+
+  
 ];
+900;

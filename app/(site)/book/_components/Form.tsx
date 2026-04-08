@@ -17,7 +17,7 @@ const Form = () => {
         <div className="flex not-md:flex-col justify-center gap-8">
           <div className="w-full">
             <label
-              className="text-black/70 text-md md:text-[20px] "
+              className="text-black/70 text-sm"
               htmlFor="fullName"
             >
               Full Name
@@ -30,7 +30,7 @@ const Form = () => {
           </div>
           <div className="w-full">
             <label
-              className="text-black/70  text-md md:text-[20px] "
+              className="text-black/70  text-sm"
               htmlFor="email"
             >
               Email
@@ -45,7 +45,7 @@ const Form = () => {
         <div className="flex not-md:flex-col justify-center gap-8 my-3">
           <div className="w-full">
             <label
-              className="text-black/70 text-md md:text-[20px] "
+              className="text-black/70 text-sm"
               htmlFor="phoneno"
             >
               Phone Number
@@ -58,7 +58,7 @@ const Form = () => {
           </div>
           <div className="w-full">
             <label
-              className="text-black/70  text-md md:text-[20px] "
+              className="text-black/70  text-sm"
               htmlFor="checkIn"
             >
               Check In
@@ -74,7 +74,7 @@ const Form = () => {
         <div className="flex not-md:flex-col justify-center gap-8 my-3">
           <div className="w-full">
             <label
-              className="text-black/70  text-md md:text-[20px] "
+              className="text-black/70  text-sm"
               htmlFor="checkOut"
             >
               Check Out
@@ -88,7 +88,7 @@ const Form = () => {
 
              <div className="w-full">
             <label
-              className="text-black/70  text-md md:text-[20px] "
+              className="text-black/70  text-sm"
               htmlFor="checkOut"
             >
               Room Types

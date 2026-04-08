@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { images } from "@/utils/images";
@@ -8,15 +8,23 @@ import { usePathname } from "next/navigation";
 import { GrLogout } from "react-icons/gr";
 import { IoMdClose } from "react-icons/io";
 import { useDashboardContext } from "@/hooks/DashboardContext";
+import { AuthService } from "../../services/authService";
+import { AuthContext } from "@/hooks/AuthContext";
 
 const Sidebar = () => {
   const pathName = usePathname();
+  const { dispatch } = useContext(AuthContext);
+
   const { navOpen, handleToggleNav } = useDashboardContext();
+
+  const handleLogout = () => {
+    AuthService.logoutUser(dispatch);
+  };
   return (
-    <aside className={`bg-white ${!navOpen && "not-sm:hidden"} `}>
-      <nav className="py-7 flex flex-col justify-between h-screen w-full">
+    <aside className={`bg-white ${!navOpen && "not-sm:hidden"} h-screen `}>
+      <nav className="flex flex-col justify-between h-screen w-full overflow-auto">
         <div className="w-full">
-          <div className="flex justify-between items-center  px-5">
+          <div className="flex justify-between items-center bg-white py-5 sticky top-0 z-10 px-5">
             <div className="flex items-center">
               <Link href={"/dashboard"}>
                 <Image
@@ -39,8 +47,7 @@ const Sidebar = () => {
               <IoMdClose className="text-2xl" />
             </button>
           </div>
-
-          <ul className="flex flex-col sgap-10 text-sm my-10 ">
+          <ul className="flex flex-col sgap-10 text-sm md:my-10 ">
             {links.map((link, i) => {
               const isActive = pathName === link.link;
               return (
@@ -77,8 +84,10 @@ const Sidebar = () => {
             })}
           </ul>
         </div>
-
-        <ul className={"px-5 flex items-center text-sm gap-3"}>
+        <ul
+          className={"px-5 flex items-center text-sm gap-3 py-6 cursor-pointer"}
+          onClick={handleLogout}
+        >
           <GrLogout className={"text-main text-xl"} />
           <li>Logout</li>
         </ul>

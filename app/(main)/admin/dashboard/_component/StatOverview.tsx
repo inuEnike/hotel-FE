@@ -12,8 +12,7 @@ import { HotelService } from "../../services/hotelService";
 
 interface IStat {
   totalRooms: number;
-  checkIns: number;
-  checkOuts: number;
+  totalNewsLetter: number;
   totalHotels: number;
   feedbacks: number;
 }
@@ -21,8 +20,7 @@ interface IStat {
 const StatOverview = () => {
   const [stats, setStats] = useState<IStat>({
     totalRooms: 0,
-    checkIns: 23,
-    checkOuts: 60,
+    totalNewsLetter: 0,
     totalHotels: 90,
     feedbacks: 0,
   });
@@ -52,40 +50,28 @@ const StatOverview = () => {
   return (
     <div className="bg-white mx-3 py-3 px-5 rounded-md">
       <h2 className={"text-xl font-medium text-supportDark"}>Overview</h2>
-      <div className="grid gap-6 grid-cols-2 lg:grid-cols-5 ">
+      <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 ">
         <div className="h-auto">
-          <div className="bg-linear-to-tr from-blue-600 to-blue-400 shadow-blue-500/40 text-white my-5 grid h-16 w-16 place-items-center rounded-full">
-            <FaCheckDouble className={"text-2xl"} />
+          <div className="bg-linear-to-tr from-main to-blue-400 shadow-blue-500/40 text-white my-5 grid h-16 w-16 place-items-center rounded-full">
+            <BsSendCheckFill className={"text-2xl"} />
           </div>
           <div className="">
-            <p className={"text-sm text-small"}>Today&#39;s</p>
+            <p className={"text-sm text-small"}>Total</p>
             <div className="flex items-center gap-3">
-              <p className={"pt-2"}>Check-in</p>
+              <p className={"pt-2"}> Newsletter</p>
               <div className="">
                 <h4 className={"text-main text-2xl md:text-3xl font-bold"}>
-                  23
+                  {loading ? (
+                    <LuLoaderCircle className="animate-spin" />
+                  ) : (
+                    stats.totalRooms
+                  )}
                 </h4>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="h-auto">
-          <div className="bg-linear-to-tr from-yellow-600 to-yellow-400 shadow-blue-500/40 text-white my-5 grid h-16 w-16 place-items-center rounded-full">
-            <BsSendCheckFill className={"text-2xl"} />
-          </div>
-          <div className="">
-            <p className={"text-sm text-small"}>Today&#39;s</p>
-            <div className="flex items-center gap-3">
-              <p className={"pt-2"}>Check-out</p>
-              <div className="">
-                <h4 className={"text-main text-2xl md:text-3xl font-bold"}>
-                  60
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="h-auto">
           <div className="bg-linear-to-tr from-main to-blue-400 shadow-blue-500/40 text-white my-5 grid h-16 w-16 place-items-center rounded-full">
             <SiGoogleclassroom className={"text-2xl"} />
