@@ -13,6 +13,8 @@ export const RoomService = {
   getAvailableRooms: async (date: {
     checkIn: string;
     checkOut: string;
+    page?: number;
+    limit?: number;
   }): Promise<IRoomResponse> => {
     try {
       const response = await Axios.post("/booking/room-available", date);
@@ -23,6 +25,11 @@ export const RoomService = {
   },
   createRoom: async (data: any) => {
     const res = await Axios.post("/rooms", data);
+    return res.data;
+  },
+
+  getRoomById: async (id: any) => {
+    const res = await Axios.get(`/rooms/${id}`);
     return res.data;
   },
 };

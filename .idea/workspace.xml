@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60ed65b5-6ee8-41b6-aec9-0a46f405fd74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/auth/signin/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/_component/AvailableRooms.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/_component/Feedbacks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/_component/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/_component/Sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/_component/StatOverview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/_component/TopNav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/links.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/rooms/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/dashboard/utils/types.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(main)/admin/services/roomService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(site)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(site)/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/DashboardContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/axios.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/(site)/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(main)/admin/services/roomService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/admin/services/roomService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(site)/book/_components/Form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(site)/book/_components/Hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(site)/book/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/buttons/MainBtn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/buttons/MainBtn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/axios.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/axios.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +104,7 @@
       <workItem from="1774871630925" duration="48788000" />
       <workItem from="1775048004960" duration="879000" />
       <workItem from="1775166531179" duration="1365000" />
+      <workItem from="1776179491183" duration="469000" />
     </task>
     <servers />
   </component>
@@ -159,14 +142,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/(main)/admin/dashboard/_component/AvailableRooms.tsx</url>
-          <line>74</line>
-          <properties lambdaOrdinal="-1" />
+          <line>92</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/(main)/admin/dashboard/_component/AvailableRooms.tsx</url>
-          <line>75</line>
-          <properties lambdaOrdinal="-1" />
+          <line>93</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
